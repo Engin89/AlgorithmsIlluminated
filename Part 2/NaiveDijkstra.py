@@ -1,5 +1,5 @@
 import time
-with open("DijkstraTest2.txt", 'r') as input:
+with open("DijkstraTest1.txt", 'r') as input:
     lines = input.readlines()
 
 lengths = {}
@@ -13,6 +13,7 @@ for line in lines:
             edge = contents[0] + '-' + content.split(',')[0]
             lengths[edge] = int(content.split(',')[1])
 
+print(vertices, lengths)
 
 def NaiveDijkstra(vertices, start_point, lengths):
     X = [start_point]

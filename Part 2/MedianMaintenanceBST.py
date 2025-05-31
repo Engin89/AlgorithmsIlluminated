@@ -3,14 +3,6 @@ import time
 
 test_case = np.loadtxt("problem11.3.txt").tolist()  # [6331,2793,1640,9290,225,625,6195,2303,5685,1354]
 
-
-class BinarySearchTree:
-    def __init__(self):
-        self.size = 0
-        self.root = []
-        self.tree = {}
-
-
 class BinarySearchTree:
     def __init__(self):
         self.size = 0
